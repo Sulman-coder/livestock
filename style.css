@@ -453,33 +453,6 @@ h2 span {
 }
 
 
-
-
-
-/* .logo {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    flex-shrink: 0;
-}
-
-.logo img {
-    display: block;
-    width: 170px;
-    height: auto;
-    max-height: 58px;
-    object-fit: contain;
-} */
-
-/* Mobile */
-/* @media (max-width: 600px) {
-    .logo img {
-        width: 135px;
-        max-height: 48px;
-    }
-} */
-
-
 .logo {
     display: inline-flex;
     align-items: center;
@@ -510,9 +483,51 @@ h2 span {
 
     position: relative;
     isolation: isolate;
+    overflow: hidden;
 
     display: flex;
     align-items: center;
+
+    color: var(--white);
+}
+
+/* ================= HERO SLIDER ================= */
+
+.hero-slider {
+    position: absolute;
+    inset: 0;
+    z-index: -3;
+}
+
+.hero-slide {
+    position: absolute;
+    inset: 0;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    opacity: 0;
+    transform: scale(1.03);
+
+    transition:
+        opacity 1.2s ease-in-out,
+        transform 7s ease;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* ================= HERO GREEN OVERLAY ================= */
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
 
     background:
         linear-gradient(
@@ -520,11 +535,11 @@ h2 span {
             rgba(2, 34, 17, 0.94) 0%,
             rgba(2, 48, 24, 0.78) 46%,
             rgba(2, 48, 24, 0.35) 100%
-        ),
-        url("/assets/hero/hero-livestock.jpg") center/cover no-repeat;
-
-    color: var(--white);
+        );
 }
+
+
+/* ================= EXISTING OVERLAY ================= */
 
 .hero-overlay {
     position: absolute;
@@ -538,6 +553,7 @@ h2 span {
             transparent 30%
         );
 }
+
 
 .hero-container {
     padding-top: 80px;

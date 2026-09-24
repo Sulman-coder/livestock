@@ -1,0 +1,590 @@
+ /* =========================================================
+   SIA AGRO - ABOUT PAGE
+   ========================================================= */
+
+/* ================= ABOUT HERO ================= */
+
+.about-hero {
+    min-height: 560px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        url("assets/about/about-company.jpg")
+        center/cover no-repeat;
+
+    color: var(--white);
+}
+
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 34, 17, 0.94) 0%,
+            rgba(2, 48, 24, 0.78) 52%,
+            rgba(2, 48, 24, 0.38) 100%
+        );
+}
+
+.about-hero-content {
+    max-width: 760px;
+    padding-top: 70px;
+}
+
+.about-hero-content h1 {
+    margin-top: 15px;
+
+    color: var(--white);
+
+    font-size: clamp(48px, 6vw, 78px);
+    line-height: 1.04;
+    letter-spacing: -3px;
+}
+
+.about-hero-content h1 span {
+    color: #61cf80;
+}
+
+.about-hero-content p {
+    max-width: 650px;
+    margin-top: 25px;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* ================= IMAGE SECTIONS ================= */
+
+.about-image-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    color: var(--white);
+}
+
+.about-section-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    transform: scale(1.02);
+}
+
+.about-section-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 34, 17, 0.93) 0%,
+            rgba(2, 48, 24, 0.78) 55%,
+            rgba(2, 48, 24, 0.42) 100%
+        );
+}
+
+
+/* ================= ABOUT COMPANY ================= */
+
+.about-company {
+    min-height: 620px;
+
+    display: flex;
+    align-items: center;
+}
+
+.about-company .about-section-bg {
+    background-image:
+        url("assets/about/about-company.jpg");
+}
+
+.about-company-content {
+    max-width: 720px;
+    padding: 90px 0;
+}
+
+.about-label {
+    margin-bottom: 18px;
+
+    color: #8be0a1;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.about-company-content h2 {
+    max-width: 700px;
+
+    color: var(--white);
+
+    font-size: clamp(38px, 5vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.about-company-content h2 span {
+    color: #61cf80;
+}
+
+.about-company-content p {
+    max-width: 650px;
+    margin-top: 22px;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+
+/* ================= EXPERTISE ================= */
+
+.expertise-section {
+    padding: 110px 0;
+
+    background: #f6faf7;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin-bottom: 55px;
+}
+
+.eyebrow-dark {
+    display: inline-block;
+
+    margin-bottom: 16px;
+
+    color: #16833b;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+}
+
+.section-heading h2 {
+    color: var(--text);
+
+    font-size: clamp(38px, 5vw, 60px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.section-heading h2 span {
+    color: #16833b;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin-top: 20px;
+
+    color: #64756a;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.expertise-card {
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(22, 131, 59, 0.10);
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.expertise-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 45px rgba(10, 60, 30, 0.12);
+}
+
+.expertise-image {
+    height: 245px;
+    overflow: hidden;
+}
+
+.expertise-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.expertise-card:hover .expertise-image img {
+    transform: scale(1.06);
+}
+
+.expertise-content {
+    padding: 30px;
+}
+
+.expertise-content > span {
+    color: #16833b;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.expertise-content h3 {
+    margin-top: 10px;
+
+    color: var(--text);
+
+    font-size: 23px;
+}
+
+.expertise-content p {
+    margin-top: 12px;
+
+    color: #68766d;
+
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* ================= QUALITY ================= */
+
+.quality-section {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+}
+
+.quality-section .about-section-bg {
+    background-image:
+        url("assets/about/about-quality.jpg");
+}
+
+.quality-section .about-section-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 30, 15, 0.95) 0%,
+            rgba(2, 45, 23, 0.82) 52%,
+            rgba(2, 45, 23, 0.42) 100%
+        );
+}
+
+.quality-content {
+    max-width: 720px;
+    padding: 90px 0;
+}
+
+.quality-content h2 {
+    color: var(--white);
+
+    font-size: clamp(40px, 5vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.quality-content h2 span {
+    color: #61cf80;
+}
+
+.quality-content p {
+    max-width: 650px;
+    margin-top: 22px;
+
+    color: rgba(255, 255, 255, 0.78);
+
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+.quality-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin-top: 38px;
+}
+
+.quality-points div {
+    min-width: 150px;
+
+    padding: 18px 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.20);
+
+    background: rgba(255, 255, 255, 0.07);
+
+    backdrop-filter: blur(8px);
+}
+
+.quality-points strong {
+    display: block;
+
+    color: #72d58d;
+
+    font-size: 12px;
+}
+
+.quality-points span {
+    display: block;
+
+    margin-top: 6px;
+
+    color: var(--white);
+
+    font-size: 13px;
+}
+
+
+/* ================= VISION & MISSION ================= */
+
+.vision-section {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+}
+
+.vision-section .about-section-bg {
+    background-image:
+        url("assets/about/about-vision.jpg");
+}
+
+.vision-section .about-section-overlay {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 34, 17, 0.91),
+            rgba(2, 48, 24, 0.68)
+        );
+}
+
+.vision-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+
+    padding: 90px 0;
+}
+
+.vision-card {
+    padding: 42px;
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    background: rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+}
+
+.vision-number {
+    color: #72d58d;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.vision-card h2 {
+    margin-top: 15px;
+
+    color: var(--white);
+
+    font-size: 36px;
+}
+
+.vision-card p {
+    margin-top: 18px;
+
+    color: rgba(255, 255, 255, 0.76);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* ================= CTA ================= */
+
+.about-cta {
+    padding: 105px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3faf5,
+            #ffffff
+        );
+}
+
+.cta-content {
+    max-width: 800px;
+}
+
+.cta-content h2 {
+    color: var(--text);
+
+    font-size: clamp(40px, 5vw, 62px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.cta-content h2 span {
+    color: #16833b;
+}
+
+.cta-content p {
+    max-width: 650px;
+    margin-top: 20px;
+
+    color: #65736a;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.cta-content .btn {
+    margin-top: 30px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .about-hero {
+        min-height: 500px;
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .expertise-image {
+        height: 280px;
+    }
+
+    .vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-company,
+    .quality-section,
+    .vision-section {
+        min-height: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about-hero {
+        min-height: 480px;
+    }
+
+    .about-hero-content {
+        padding-top: 50px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+
+    .about-hero-content p {
+        font-size: 15px;
+    }
+
+    .about-company-content,
+    .quality-content {
+        padding: 75px 0;
+    }
+
+    .about-company-content h2,
+    .quality-content h2 {
+        font-size: 40px;
+        letter-spacing: -1.5px;
+    }
+
+    .expertise-section {
+        padding: 80px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    .section-heading h2 {
+        font-size: 40px;
+    }
+
+    .expertise-image {
+        height: 230px;
+    }
+
+    .expertise-content {
+        padding: 25px;
+    }
+
+    .quality-points {
+        flex-direction: column;
+    }
+
+    .quality-points div {
+        width: 100%;
+    }
+
+    .vision-grid {
+        padding: 75px 0;
+    }
+
+    .vision-card {
+        padding: 30px;
+    }
+
+    .vision-card h2 {
+        font-size: 30px;
+    }
+
+    .about-cta {
+        padding: 80px 0;
+    }
+
+    .cta-content h2 {
+        font-size: 40px;
+    }
+
+}
