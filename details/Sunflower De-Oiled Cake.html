@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sunflower De-Oiled Cake | Siya Agro Pvt. Ltd.</title>
+
+    <!-- Existing Website CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Product Detail Page CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        /* =========================================
+   PRODUCT DETAIL PAGE
+========================================= */
+
+.product-hero {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #064e3b, #087f5b);
+    color: #fff;
+    padding: 55px 0 80px;
+}
+
+.product-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 55px;
+    font-size: 14px;
+    color: rgba(255,255,255,0.75);
+}
+
+.product-breadcrumb a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.product-breadcrumb span {
+    opacity: 0.7;
+}
+
+.product-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.product-label {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.product-hero-text h1 {
+    margin: 0 0 22px;
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: 0.98;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.product-hero-text p {
+    max-width: 560px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.82);
+    margin-bottom: 30px;
+}
+
+.product-main-btn,
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    background: #fff;
+    color: #075c43;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.product-main-btn:hover,
+.cta-button:hover {
+    transform: translateY(-3px);
+}
+
+.product-main-btn span,
+.cta-button span {
+    font-size: 20px;
+}
+
+.product-hero-image {
+    position: relative;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-hero-image .image-circle {
+    position: absolute;
+    width: 390px;
+    height: 390px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.12);
+}
+
+.product-hero-image img {
+    position: relative;
+    z-index: 2;
+    width: min(430px, 90%);
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 35px;
+    box-shadow: 0 30px 70px rgba(0,0,0,0.25);
+}
+
+
+/* =========================================
+   MAIN PRODUCT
+========================================= */
+
+.product-detail {
+    background: #f6faf7;
+    padding: 90px 0;
+}
+
+.section-heading {
+    margin-bottom: 40px;
+}
+
+.section-heading > span {
+    display: inline-block;
+    color: #087f5b;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    color: #12352b;
+    font-size: clamp(32px, 4vw, 50px);
+    line-height: 1.15;
+}
+
+.section-heading.center {
+    text-align: center;
+}
+
+.product-intro {
+    background: #fff;
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.06);
+    margin-bottom: 90px;
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 1fr 180px;
+    gap: 50px;
+    align-items: center;
+}
+
+.intro-text h3 {
+    color: #174b3b;
+    font-size: 27px;
+    line-height: 1.35;
+    margin: 0 0 20px;
+}
+
+.intro-text p {
+    color: #61736c;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.intro-badge {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #e3f3eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #087f5b;
+}
+
+.badge-number {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.intro-badge span {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+/* =========================================
+   SPECIFICATIONS
+========================================= */
+
+.product-specifications {
+    margin-bottom: 100px;
+}
+
+.specification-layout {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.specification-image {
+    overflow: hidden;
+    border-radius: 25px;
+    background: #fff;
+    min-height: 350px;
+}
+
+.specification-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.specification-image:hover img {
+    transform: scale(1.04);
+}
+
+/* Right image bigger and properly fitted */
+.second-image {
+    min-height: 400px;
+}
+
+.second-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 20px;
+}
+
+/* =========================================
+   WHY CHOOSE
+========================================= */
+
+.why-product {
+    margin-bottom: 100px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.benefit-card {
+    position: relative;
+    background: #fff;
+    padding: 35px;
+    border-radius: 22px;
+    border: 1px solid #e1eee8;
+    transition: 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.08);
+    border-color: #a9d9c4;
+}
+
+.benefit-number {
+    color: #087f5b;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    color: #163d31;
+    font-size: 21px;
+    margin: 0 0 14px;
+}
+
+.benefit-card p {
+    color: #667872;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================
+   APPLICATIONS
+========================================= */
+
+.applications {
+    margin-bottom: 100px;
+}
+
+.applications .section-heading p {
+    color: #667872;
+    font-size: 17px;
+    margin-top: 15px;
+}
+
+.applications-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.application-card {
+    background: #e7f5ee;
+    border-radius: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.application-card:hover {
+    transform: translateY(-7px);
+    background: #d9f0e5;
+}
+
+.application-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 22px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.application-card h3 {
+    color: #174b3b;
+    margin: 0 0 13px;
+    font-size: 23px;
+}
+
+.application-card p {
+    color: #63776e;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.product-cta {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #075c43, #0b8f66);
+    color: #fff;
+    padding: 70px 50px;
+    border-radius: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.product-cta::before,
+.product-cta::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.15);
+}
+
+.product-cta::before {
+    width: 300px;
+    height: 300px;
+    left: -150px;
+    top: -150px;
+}
+
+.product-cta::after {
+    width: 250px;
+    height: 250px;
+    right: -100px;
+    bottom: -120px;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-content > span {
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    opacity: 0.75;
+}
+
+.cta-content h2 {
+    font-size: clamp(30px, 4vw, 48px);
+    margin: 15px 0;
+}
+
+.cta-content p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.8);
+}
+
+
+/* =========================================
+   PREVIOUS / NEXT
+========================================= */
+
+.post-navigation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.post-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 1px solid #e2eee8;
+    transition: 0.3s ease;
+}
+
+.post-nav:hover {
+    transform: translateY(-4px);
+    border-color: #8ccfb2;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+}
+
+.post-nav.next {
+    text-align: right;
+}
+
+.post-nav span {
+    color: #087f5b;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.post-nav strong {
+    color: #173d31;
+    font-size: 18px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .product-hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .product-hero-text {
+        text-align: center;
+    }
+
+    .product-hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-hero-image {
+        min-height: 350px;
+    }
+
+    .product-intro {
+        padding: 40px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .applications-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .product-hero {
+        padding: 35px 0 60px;
+    }
+
+    .product-breadcrumb {
+        margin-bottom: 35px;
+        flex-wrap: wrap;
+    }
+
+    .product-hero-text h1 {
+        font-size: 42px;
+    }
+
+    .product-hero-text p {
+        font-size: 16px;
+    }
+
+    .product-hero-image {
+        min-height: 280px;
+    }
+
+    .product-hero-image .image-circle {
+        width: 270px;
+        height: 270px;
+    }
+
+    .product-detail {
+        padding: 60px 0;
+    }
+
+    .product-intro {
+        padding: 30px 22px;
+        margin-bottom: 60px;
+    }
+
+    .intro-content {
+        grid-template-columns: 1fr;
+    }
+
+    .intro-badge {
+        margin: 0 auto;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .specification-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-cta {
+        padding: 55px 25px;
+        margin-bottom: 50px;
+    }
+
+    .post-navigation {
+        grid-template-columns: 1fr;
+    }
+
+    .post-nav.next {
+        text-align: left;
+    }
+
+}
+
+
+
+@media (max-width: 900px) {
+
+    .specification-layout {
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 20px;
+    }
+
+    .specification-image {
+        min-height: 300px;
+    }
+
+    .second-image {
+        min-height: 350px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    .specification-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .specification-image,
+    .second-image {
+        min-height: 300px;
+    }
+
+    .specification-image img,
+    .second-image img {
+        height: 300px;
+        padding: 15px;
+    }
+}
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+ <header class="site-header" id="siteHeader">
+        <div class="container header-inner">
+
+
+
+            <a href="#home" class="logo" aria-label="Siya agro">
+    <img src="/assets/logo/logo-removebg-preview.png" alt="Siya agro">
+</a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+                <a href="/index.html" class="active">Home</a>
+                <a href="/about.html">About Us</a>
+                <a href="/products.html">Products</a>
+                <a href="/index.html#quality">Quality</a>
+                <a href="/index.html#network">Our Network</a>
+                <a href="/contact.html">Contact Us</a>
+            </nav>
+
+            <a href="/contact" class="header-btn">
+                Get In Touch
+                <span>→</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+    </header>
+
+
+<!-- ================= PRODUCT HERO ================= -->
+
+<section class="product-hero">
+
+    <div class="container">
+
+        <div class="product-breadcrumb">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <a href="products.html">Products</a>
+            <span>/</span>
+            <span>Sunflower De-Oiled Cake</span>
+        </div>
+
+        <div class="product-hero-content">
+
+            <div class="product-hero-text">
+
+                <span class="product-label">
+                    LIVESTOCK FEED
+                </span>
+
+                <h1>
+                    SUN FLOWER<br>
+                    DE OILED CAKE
+                </h1>
+
+                <p>
+                    Premium sunflower de-oiled cake designed as a
+                    balanced, high-fiber and cost-effective feed
+                    ingredient for livestock.
+                </p>
+
+                <a href="/contact.html" class="product-main-btn">
+                    Get In Touch
+                    <span>→</span>
+                </a>
+
+            </div>
+
+            <div class="product-hero-image">
+
+                <div class="image-circle"></div>
+
+                <img
+                    src="/assets/products/sunflower-doc.jpg"
+                    alt="Sunflower De-Oiled Cake">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MAIN PRODUCT CONTENT ================= -->
+
+<main class="product-detail">
+
+    <div class="container">
+
+        <!-- Introduction -->
+
+        <section class="product-intro">
+
+            <div class="section-heading">
+
+                <span>OUR PRODUCT</span>
+
+                <h2>
+                    Sunflower De-Oiled Cake
+                </h2>
+
+            </div>
+
+            <div class="intro-content">
+
+                <div class="intro-text">
+
+                    <h3>
+                        Premium Sunflower De-Oiled Cake –
+                        A Balanced, High-Fiber Feed Option
+                    </h3>
+
+                    <p>
+                        At <strong>Siya Agro Pvt. Ltd.</strong>,
+                        we deliver superior livestock feed solutions
+                        to boost animal health and productivity.
+                        Our <strong>Sunflower De-Oiled Cake</strong>
+                        is a cost-effective, nutrient-dense feed
+                        ingredient ideal for poultry, cattle, and
+                        other livestock.
+                    </p>
+
+                </div>
+
+                <div class="intro-badge">
+
+                    <div class="badge-number">
+                        01
+                    </div>
+
+                    <span>
+                        Quality<br>
+                        Feed Solution
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PRODUCT SPECIFICATIONS ================= -->
+
+        <section class="product-specifications">
+
+            <div class="section-heading center">
+
+                <span>PRODUCT SPECIFICATIONS</span>
+
+                <h2>
+                    Quality You Can Rely On
+                </h2>
+
+            </div>
+
+            <div class="specification-layout">
+
+                <div class="specification-image">
+
+                    <img
+                        src="/assets/products/sunflower-doc.jpg"
+                        alt="Sunflower De-Oiled Cake Product">
+
+                </div>
+
+                <div class="specification-image second-image">
+
+                    <img
+                        src="https://viratfeedspvtltd.com/wp-content/uploads/2024/11/Add_a_heading__9_-removebg-preview.png"
+                        alt="Sunflower De-Oiled Cake">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY CHOOSE ================= -->
+
+        <section class="why-product">
+
+            <div class="section-heading center">
+
+                <span>WHY CHOOSE IT?</span>
+
+                <h2>
+                    Why Choose Siya Agro' Sunflower De-Oiled Cake?
+                </h2>
+
+            </div>
+
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+
+                    <div class="benefit-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Moderate Protein Content
+                    </h3>
+
+                    <p>
+                        Provides essential nutrients for animal
+                        growth and maintenance.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Low Fat Levels
+                    </h3>
+
+                    <p>
+                        Suitable for balanced feeding without
+                        excessive fat.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-number">
+                        03
+                    </div>
+
+                    <h3>
+                        High Fiber
+                    </h3>
+
+                    <p>
+                        Improves digestive health and supports
+                        better feed efficiency.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Cost-Effective
+                    </h3>
+
+                    <p>
+                        A value-for-money feed ingredient for
+                        economical livestock nutrition.
+                    </p>
+
+                </div>
+
+
+                <div class="benefit-card">
+
+                    <div class="benefit-number">
+                        05
+                    </div>
+
+                    <h3>
+                        Sustainable Production
+                    </h3>
+
+                    <p>
+                        Sourced from high-quality sunflower seeds
+                        under eco-friendly processes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= APPLICATIONS ================= -->
+
+        <section class="applications">
+
+            <div class="section-heading center">
+
+                <span>APPLICATIONS</span>
+
+                <h2>
+                    Suitable For Different Livestock
+                </h2>
+
+                <p>
+                    Sunflower De-Oiled Cake is perfect for:
+                </p>
+
+            </div>
+
+
+            <div class="applications-grid">
+
+                <div class="application-card">
+
+                    <div class="application-icon">
+                        🐄
+                    </div>
+
+                    <h3>
+                        Cattle Feed
+                    </h3>
+
+                    <p>
+                        Enhances digestion, increases milk yield,
+                        and supports overall health.
+                    </p>
+
+                </div>
+
+
+                <div class="application-card">
+
+                    <div class="application-icon">
+                        🐔
+                    </div>
+
+                    <h3>
+                        Poultry Feed
+                    </h3>
+
+                    <p>
+                        Improves growth and promotes effective
+                        feed conversion.
+                    </p>
+
+                </div>
+
+
+                <div class="application-card">
+
+                    <div class="application-icon">
+                        🐐
+                    </div>
+
+                    <h3>
+                        Sheep & Goat Feed
+                    </h3>
+
+                    <p>
+                        Supports healthy weight gain and
+                        balanced nutrition.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CTA ================= -->
+
+        <section class="product-cta">
+
+            <div class="cta-content">
+
+                <span>
+                    Siya Agro PVT. LTD.
+                </span>
+
+                <h2>
+                    Looking for Quality Feed Ingredients?
+                </h2>
+
+                <p>
+                    Get in touch with our team for product
+                    information and business inquiries.
+                </p>
+
+                <a href="/contact.html" class="cta-button">
+                    Contact Us
+                    <span>→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= POST NAVIGATION ================= -->
+
+        <section class="post-navigation">
+
+            <a href="groundnut-de-oiled-cake.html"
+               class="post-nav previous">
+
+                <span>← Previous Post</span>
+
+                <strong>
+                    Groundnut De-Oiled Cake
+                </strong>
+
+            </a>
+
+
+            <a href="de-oiled-rice-bran.html"
+               class="post-nav next">
+
+                <span>Next Post →</span>
+
+                <strong>
+                    De-Oiled Rice Bran
+                </strong>
+
+            </a>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+ <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand"> <a href="index.html" class="logo" aria-label="Siya Agro"> <img
+                            src="/assets/logo/logo-removebg-preview.png" alt="Virat Feeds Private Limited"> </a>
+                    <p> Quality feed ingredients and dependable sourcing solutions for a growing animal nutrition
+                        industry. </p>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3> <a href="/index.html">Home</a> <a href="/about.html">About Us</a> <a
+                        href="/products.html">Products</a> <a href="/index.html#quality.html">Quality</a> <a
+                        href="/index.html#network">Our Network</a> <a href="/contact.html">Contact Us</a>
+                </div>
+                <div class="footer-column">
+                    <h3>Products</h3> <a href="#">Soya DOC</a> <a href="#">Sunflower DOC</a> <a href="#">Groundnut
+                        DOC</a> <a href="#">Rice DDGS</a> <a href="#">Mustard DOC</a>
+                </div>
+                <div class="footer-column footer-contact">
+                    <h3>Contact</h3> <a href="mailto:info@viratfeedspvtltd.com"> info@viratfeedspvtltd.com </a> <span>
+                        India </span> <a href="contact.html" class="footer-contact-link"> Send an enquiry → </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p> © <span id="currentYear"></span> Siya Agro Private Limited. All Rights Reserved. </p>
+                <div class="footer-bottom-links"> <a href="#">Privacy Policy</a> <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+ <button class="back-to-top" id="backToTop" aria-label="Back to top"> ↑ </button>
+
+
+<!-- Existing Website JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

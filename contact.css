@@ -1,35 +1,6 @@
 /* =========================================================
-   SIA AGRO - CONTACT PAGE
+   SIYA AGRO - CONTACT PAGE
    ========================================================= */
-
-
-/* ================= CONTACT PAGE ================= */
-
-/* .contact-page {
-    position: relative;
-    isolation: isolate;
-
-    min-height: 100vh;
-
-    padding: 110px 0 80px;
-
-    color: var(--text); */
-
-    /* FULL PAGE BACKGROUND IMAGE */
-    /* background:
-        linear-gradient(
-            rgba(240, 250, 243, 0.58),
-            rgba(240, 250, 243, 0.58)
-        ),
-        url("/assets/contact/contact-bg.jpg.jpg");
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
-
-
 
 .contact-page {
     position: relative;
@@ -42,7 +13,7 @@
     color: var(--text);
 
     /* FIXED BACKGROUND IMAGE */
-    background-image: url("/assets/contact/contact2.jfif");
+    background-image: url("https://images.openai.com/static-rsc-4/N0w-XCPCzlvChLPASgorDEcadeNE73hD_nupUvgehrJq66wLas5s-B7PWvqjtYMUqM43nTTiiBRPhnjqUYzpQafetKLvk4pRFyB-dU-s-_a3_KRKvVp2malVPfEk76KbKEJzNe5itXmUCgi5dGi7xTK4Bc7s2Ut5O_bVcNoWI6k?purpose=inline");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
